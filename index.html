@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <title>Sketch pad</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class = "title"><h1>SketchPad</h1></div>
+        <div class = "mode">Mode: Colouring (Click Anywhere) </div>
+        <div class = "content">
+            <div class="board"></div>
+            <div class="buttons">
+                <button class="button-3" onclick = "changeColor('black')">Black</button>
+                <button class="button-3" onclick = "changeColor('white')">Erasor</button>
+                <button class="button-3" onclick = "changeColor('gray')">Gray</button>
+                <button class="button-3" onclick = "changeColor('random')">Random</button>
+                <button class="button-3" onclick = "resetBoard()">Reset</button>
+            </div>
+            <div class="size-modifier">
+                <input class = "input" type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
+                <button class="button-6" >Set Size</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
